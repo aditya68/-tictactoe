@@ -221,6 +221,6 @@ function player1()
 	moveto(1,id)
 	score=calscore();
 	if(score)win(1);
-	if(!isfree())tie();
-	return 1;
+	else if(!isfree())tie();
+	return;
 }
